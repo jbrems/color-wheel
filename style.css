@@ -1,0 +1,15 @@
+body {
+  background-color: #f8f8f8;
+  font-family: Roboto, Sans-serif;
+  text-align: center;
+}
+
+canvas {
+  width: calc(100% - 6px);
+  max-width: 1024px;
+  max-height: 800px;
+  background-color: #fefefe;
+
+  border-radius: 25px;
+  box-shadow: 3px 3px 6px #888888;
+}

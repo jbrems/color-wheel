@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Color wheel</title>
+  <link href="style.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<h1>Color wheel</h1>
+<canvas id="canvas" width="1024" height="800"></canvas>
+
+<script src="script.js" type="module"></script>
+<script type="module">
+  import { setContext, drawColorWheel, drawInstructions, drawMousePosition, drawPickedColor } from './script.js';
+
+  window.onload = () => {
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    setContext(ctx);
+
+    drawColorWheel();
+    drawInstructions();
+
+    canvas.addEventListener('mousemove', (event) => {
+      drawMousePosition(event.offsetX, event.offsetY);
+      drawPickedColor(event.offsetX, event.offsetY);
+    });
+  };
+</script>
+</body>
+</html>
