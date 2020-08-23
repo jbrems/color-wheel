@@ -2,7 +2,7 @@
 A rudimentary color picker made with some Javascript and an HTML canvas 
 element. [[Live demo]](https://jbrems.github.io/color-wheel/index.html)
 
-<img src="/readme-img/color_wheel.png" width="400" height="300" alt=""/>
+<img src="https://jbrems.github.io/color-wheel/readme-img/color_wheel.png" width="400" height="300" alt=""/>
 
 ## Explanation
 
@@ -31,13 +31,13 @@ The color wheel consists of 100 circles with varying radius based on the
 saturation. If we draw every 5th saturation circle, the wheel would look like
 this.
 
-<img src="/readme-img/saturation_circles.png" width="300" height="300" alt=""/>.  
+<img src="https://jbrems.github.io/color-wheel/readme-img/saturation_circles.png" width="300" height="300" alt=""/>.  
 
 Another way we can define the color wheel is by 360 1° segments with a 
 different color. The angle (0 - 360) defines the hue (0 - 360) of the color.
 If we draw every 5th hue segment, the wheel would look like this.
 
-<img src="/readme-img/hue_slices.png" width="300" height="300" alt=""/>.  
+<img src="https://jbrems.github.io/color-wheel/readme-img/hue_slices.png" width="300" height="300" alt=""/>.  
 
 The first color in the hue scale (value 0) is red and lies directly to the
 right of the center of the wheel. This makes sense since we generally measure
@@ -73,7 +73,7 @@ from the center of the wheel. To get around this issue, we add a check to
 determine whether the cursor is above or below the vertical middle (y) of the
 wheel, and we inverse the hue value of the color when the cursor is below.
 
-<img src="/readme-img/2_colors_for_x.png" width="300" height="300" alt=""/>.  
+<img src="https://jbrems.github.io/color-wheel/readme-img/2_colors_for_x.png" width="300" height="300" alt=""/>.  
 
 If we base ourselves on the y value to determine the hue we will find 2
 colors for every given y value and distance from the center, and we need to
