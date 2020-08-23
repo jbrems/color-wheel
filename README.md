@@ -1,6 +1,6 @@
 # Color wheel
 A rudimentary color picker made with some Javascript and an HTML canvas 
-element.
+element. [[Live demo]](https://jbrems.github.io/color-wheel/index.html)
 
 <img src="/readme-img/color_wheel.png" width="400" height="300" alt=""/>
 
